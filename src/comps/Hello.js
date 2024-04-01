@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Hello() {
   return (
-    <div>Hello</div>
+    <h1 className='text-danger'>React Work</h1 >
   )
 }
