@@ -7,7 +7,8 @@ export default function Header() {
         <Link to="/">Home</Link> | 
         <Link to="/shop">Shop</Link> |
         <Link to="/foods/cakes">Foods</Link> |
-        <Link to="/query?search=dogs">Query test</Link>
+        <Link to="/query?search=dogs">Query test</Link> |
+        <Link to="/games">Games</Link>
       </div>
     </header>
   )
