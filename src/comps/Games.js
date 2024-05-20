@@ -38,17 +38,16 @@ export default function Games() {
     return (
         <div className='container'>
             <h2>Games: {query.get('search')}</h2>
-            {error && <p>{error}</p>}
-            {!error && (
+            {error ? <p>{error}</p> :
                 <ul>
-                    {games_ar.map(item => (
-                        <li key={item.Game} onClick={() => redirectToGameLink(item.GameLink)} style={{ cursor: 'pointer' }} >
-                            {item.Game}
-                            <hr/>
-                        </li>
-                    ))}
-                </ul>
-            )}
+                        {games_ar.map(item => (
+                            <li key={item.Game} onClick={() => redirectToGameLink(item.GameLink)} style={{ cursor: 'pointer' }} >
+                                {item.Game}
+                                <hr/>
+                            </li>
+                        ))}
+                    </ul>
+            }
         </div>
     );
 }
